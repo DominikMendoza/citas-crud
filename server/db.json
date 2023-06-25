@@ -1,0 +1,95 @@
+{
+  "pacientes": [
+    {
+      "id": 2,
+      "nombre_completo": "Willy David",
+      "fecha_nacimiento": "1990-05-10",
+      "genero": "Masculino",
+      "direccion": "Calle Principal 123",
+      "telefono": "123456789",
+      "correo_electronico": "juan@example.com",
+      "numero_seguro_medico": "12345678",
+      "razon_cita": "Consulta médica",
+      "sintomas_quejas": "Dolor de cabeza y fiebre",
+      "estado_cita": "confirmo"
+    },
+    {
+      "id": 3,
+      "nombre_completo": "Miguel Ybañez",
+      "fecha_nacimiento": "1990-05-10",
+      "genero": "Masculino",
+      "direccion": "Calle Principal 123",
+      "telefono": "127756789",
+      "correo_electronico": "juan@example.com",
+      "numero_seguro_medico": "12345678",
+      "razon_cita": "Consulta médica",
+      "sintomas_quejas": "Covid",
+      "estado_cita": "confirmo"
+    },
+    {
+      "id": 4,
+      "nombre_completo": "Johan Moreno",
+      "fecha_nacimiento": "1990-05-10",
+      "genero": "Masculino",
+      "direccion": "Calle Principal 123",
+      "telefono": "123446789",
+      "correo_electronico": "juan@example.com",
+      "numero_seguro_medico": "12345678",
+      "razon_cita": "Consulta médica",
+      "sintomas_quejas": "Gripe",
+      "estado_cita": "confirmo"
+    },
+    {
+      "id": 5,
+      "nombre_completo": "Willy Vacunas",
+      "fecha_nacimiento": "1990-05-10",
+      "genero": "Masculino",
+      "direccion": "Calle Principal 123",
+      "telefono": "123456789",
+      "correo_electronico": "juan@example.com",
+      "numero_seguro_medico": "12345678",
+      "razon_cita": "Consulta médica",
+      "sintomas_quejas": "Dolor de cabeza y fiebre",
+      "estado_cita": "confirmo"
+    },
+    {
+      "id": 7,
+      "nombre_completo": "a",
+      "fecha_nacimiento": "a",
+      "genero": "a",
+      "direccion": "a",
+      "telefono": "a",
+      "correo_electronico": "a",
+      "numero_seguro_medico": "a",
+      "razon_cita": "a",
+      "sintomas_quejas": "a",
+      "estado_cita": ""
+    },
+    {
+      "id": 8,
+      "nombre_completo": "sample",
+      "fecha_nacimiento": "sample",
+      "genero": "sample",
+      "direccion": "sample",
+      "telefono": "sample",
+      "correo_electronico": "sample",
+      "numero_seguro_medico": "sample",
+      "razon_cita": "sample",
+      "sintomas_quejas": "sample",
+      "estado_cita": ""
+    },
+    {
+      "id": 9,
+      "nombre_completo": "uwu",
+      "fecha_nacimiento": "aa",
+      "genero": "a",
+      "direccion": "a",
+      "telefono": "a",
+      "correo_electronico": "a",
+      "numero_seguro_medico": "a",
+      "razon_cita": "a",
+      "sintomas_quejas": "a",
+      "estado_cita": ""
+    }
+  ]
+}

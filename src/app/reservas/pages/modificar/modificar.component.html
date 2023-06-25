@@ -1,0 +1,60 @@
+<div class="container">
+    <p>Modificar Paciente</p>
+    <div class="row">
+        <div class="col-sm-6">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Nombre Paciente</label>
+                    <input [(ngModel)]="paciente.nombre_completo" type="text" class="form-control" name="nombre">
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label">Fecha de Nacimiento</label>
+                    <input [(ngModel)]="paciente.fecha_nacimiento" type="text" class="form-control" name="nacimiento">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Genero</label>
+                    <input [(ngModel)]="paciente.genero" type="text" class="form-control" name="genero">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Direccion</label>
+                    <input [(ngModel)]="paciente.direccion" type="text" class="form-control" name="direccion">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Telefono</label>
+                    <input [(ngModel)]="paciente.telefono" type="text" class="form-control" name="telefono">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Correo Electronico</label>
+                    <input [(ngModel)]="paciente.correo_electronico" type="text" class="form-control" name="correo">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Numero de Seguro Medico</label>
+                    <input [(ngModel)]="paciente.numero_seguro_medico" type="text" class="form-control" name="seguro">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Razon de la cita</label>
+                    <input [(ngModel)]="paciente.razon_cita" type="text" class="form-control" name="razon">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Sintomas</label>
+                    <input [(ngModel)]="paciente.sintomas_quejas" type="text" class="form-control" name="sintomas">
+                </div>
+
+                <button (click)="modificar()" class="btn btn-primary">Guardar</button>
+            </form>
+        </div>
+
+
+        <div class="col-sm-6">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">{{paciente.nombre_completo}}</label>
+                    
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
