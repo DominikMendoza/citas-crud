@@ -7,7 +7,10 @@ export interface Paciente {
     telefono: string;
     correo_electronico: string;
     numero_seguro_medico: string;
+    
+    //cita
     razon_cita: string;
+    fecha_registro:string;
     sintomas_quejas: string;
     estado_cita: string;
 }

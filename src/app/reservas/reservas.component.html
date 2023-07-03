@@ -14,6 +14,7 @@
             <th scope="col">Correo Electronico</th>
             <th scope="col">Numero de Seguro</th>
             <th scope="col">Razon de la cita</th>
+            <th scope="col">Fecha de registro</th>
             <th scope="col">Sintomas</th>
             <th scope="col">Editar</th>
             <th scope="col">Eliminar</th>
@@ -30,6 +31,7 @@
             <td>{{paciente.correo_electronico}}</td>
             <td>{{paciente.numero_seguro_medico}}</td>
             <td>{{paciente.razon_cita}}</td>
+            <td>{{paciente.fecha_registro}}</td>
             <td>{{paciente.sintomas_quejas}}</td>
             <td>
                 <button (click)="updatePaciente(paciente.id)" type="button" class="btn btn-primary">Editar</button>

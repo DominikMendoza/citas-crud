@@ -1,19 +1,6 @@
 {
   "pacientes": [
     {
-      "id": 2,
-      "nombre_completo": "Willy David",
-      "fecha_nacimiento": "1990-05-10",
-      "genero": "Masculino",
-      "direccion": "Calle Principal 123",
-      "telefono": "123456789",
-      "correo_electronico": "juan@example.com",
-      "numero_seguro_medico": "12345678",
-      "razon_cita": "Consulta médica",
-      "sintomas_quejas": "Dolor de cabeza y fiebre",
-      "estado_cita": "confirmo"
-    },
-    {
       "id": 3,
       "nombre_completo": "Miguel Ybañez",
       "fecha_nacimiento": "1990-05-10",
@@ -89,6 +76,48 @@
       "numero_seguro_medico": "a",
       "razon_cita": "a",
       "sintomas_quejas": "a",
+      "estado_cita": ""
+    },
+    {
+      "id": 10,
+      "nombre_completo": "Nikole",
+      "fecha_nacimiento": "23/06/23",
+      "genero": "Femenino",
+      "direccion": "lima",
+      "telefono": "6786954",
+      "correo_electronico": "arcangel080902@gmail.com",
+      "numero_seguro_medico": "124124",
+      "razon_cita": "asdasf",
+      "sintomas_quejas": "asdasd",
+      "fecha_registro": "2023-06-27T02:22:20.176Z",
+      "estado_cita": ""
+    },
+    {
+      "id": 11,
+      "nombre_completo": "Dominik",
+      "fecha_nacimiento": "23/06/23",
+      "genero": "Femenino",
+      "direccion": "prolongacion tacna con capilla",
+      "telefono": "123124",
+      "correo_electronico": "arcangel080902@gmail.com",
+      "numero_seguro_medico": "123124",
+      "razon_cita": "asdasf",
+      "sintomas_quejas": "",
+      "fecha_registro": "2023-6-26 21:24:9",
+      "estado_cita": ""
+    },
+    {
+      "id": 12,
+      "nombre_completo": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "fecha_nacimiento": "12321",
+      "genero": "12312",
+      "direccion": "123123",
+      "telefono": "141242141",
+      "correo_electronico": "312312312",
+      "numero_seguro_medico": "213123123",
+      "razon_cita": "123123123",
+      "sintomas_quejas": "1231231",
+      "fecha_registro": "2023-6-26 23:59:56",
       "estado_cita": ""
     }
   ]

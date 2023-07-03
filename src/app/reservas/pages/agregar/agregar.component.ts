@@ -19,7 +19,7 @@ export class AgregarComponent {
     numero_seguro_medico: '',
     razon_cita: '',
     sintomas_quejas: '',
-    //fecha_registro: '',
+    fecha_registro: '',
     estado_cita: ''
   }
   constructor(private pacienteService: PacienteService, private router: Router) { }

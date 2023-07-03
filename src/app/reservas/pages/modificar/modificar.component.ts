@@ -19,7 +19,7 @@ export class ModificarComponent implements OnInit{
     numero_seguro_medico:'',
     razon_cita:'',
     sintomas_quejas:'',
-    //fecha_registro:'',
+    fecha_registro:'',
     estado_cita:''
   }
   ngOnInit(): void {

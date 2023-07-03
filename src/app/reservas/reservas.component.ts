@@ -15,7 +15,7 @@ export class PacienteComponent implements OnInit {
   pacientes: Paciente[] = [];
   pacienteForm: FormGroup;
   displayedColumns: string[] = ['nombre_completo', 'fecha_nacimiento', 'genero', 'direccion', 'telefono', 
-'correo_electronico', 'numero_seguro_medico', 'razon_cita', 'sintomas_quejas', 'estado_cita', 'acciones'];
+'correo_electronico', 'numero_seguro_medico', 'razon_cita','fecha_registro', 'sintomas_quejas', 'estado_cita', 'acciones'];
 
   constructor(private pacienteService: PacienteService, private router: Router) {
     this.pacienteForm = new FormGroup({});
@@ -32,6 +32,7 @@ export class PacienteComponent implements OnInit {
       'correo_electronico': new FormControl(null),
       'numero_seguro_medico': new FormControl(null),
       'razon_cita': new FormControl(null),
+      'fecha_registro': new FormControl(null),
       'sintomas_quejas': new FormControl(null),
       'estado_cita': new FormControl(null)
     });
