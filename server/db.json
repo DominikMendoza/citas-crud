@@ -40,19 +40,6 @@
       "estado_cita": "confirmo"
     },
     {
-      "id": 7,
-      "nombre_completo": "a",
-      "fecha_nacimiento": "a",
-      "genero": "a",
-      "direccion": "a",
-      "telefono": "a",
-      "correo_electronico": "a",
-      "numero_seguro_medico": "a",
-      "razon_cita": "a",
-      "sintomas_quejas": "a",
-      "estado_cita": ""
-    },
-    {
       "id": 8,
       "nombre_completo": "sample",
       "fecha_nacimiento": "sample",
@@ -63,19 +50,6 @@
       "numero_seguro_medico": "sample",
       "razon_cita": "sample",
       "sintomas_quejas": "sample",
-      "estado_cita": ""
-    },
-    {
-      "id": 9,
-      "nombre_completo": "uwu",
-      "fecha_nacimiento": "aa",
-      "genero": "a",
-      "direccion": "a",
-      "telefono": "a",
-      "correo_electronico": "a",
-      "numero_seguro_medico": "a",
-      "razon_cita": "a",
-      "sintomas_quejas": "a",
       "estado_cita": ""
     },
     {
@@ -105,20 +79,35 @@
       "sintomas_quejas": "",
       "fecha_registro": "2023-6-26 21:24:9",
       "estado_cita": ""
+    }
+  ],
+  "citas": [
+    {
+      "id": 2,
+      "razon_cita": "a",
+      "fecha_registro": "2023-7-2 21:52:33",
+      "sintomas_quejas": "a",
+      "estado_cita": "a",
+      "paciente_id": "1",
+      "doctor_id": "1"
     },
     {
-      "id": 12,
-      "nombre_completo": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "fecha_nacimiento": "12321",
-      "genero": "12312",
-      "direccion": "123123",
-      "telefono": "141242141",
-      "correo_electronico": "312312312",
-      "numero_seguro_medico": "213123123",
-      "razon_cita": "123123123",
-      "sintomas_quejas": "1231231",
-      "fecha_registro": "2023-6-26 23:59:56",
-      "estado_cita": ""
+      "id": 3,
+      "razon_cita": "a",
+      "fecha_registro": "2023-7-2 21:54:23",
+      "sintomas_quejas": ".",
+      "estado_cita": "a",
+      "paciente_id": "1",
+      "doctor_id": "1"
+    },
+    {
+      "id": 4,
+      "razon_cita": "a",
+      "fecha_registro": "2023-7-2 21:57:15",
+      "sintomas_quejas": ".e",
+      "estado_cita": "e",
+      "paciente_id": "2",
+      "doctor_id": "1"
     }
   ]
 }

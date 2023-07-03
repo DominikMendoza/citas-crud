@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PacienteService } from '../../services/pacientes.service';
-import { Paciente } from '../../model/paciente.model';
+import { PacienteService } from '../../../services/pacientes.service';
+import { Paciente } from '../../../model/paciente.model';
 import { Router, ActivatedRoute} from '@angular/router';
 @Component({
   selector: 'app-modificar',
@@ -17,10 +17,6 @@ export class ModificarComponent implements OnInit{
     telefono:'',
     correo_electronico:'',
     numero_seguro_medico:'',
-    razon_cita:'',
-    sintomas_quejas:'',
-    fecha_registro:'',
-    estado_cita:''
   }
   ngOnInit(): void {
     const id_entrada = <string>this.activeRoute.snapshot.params['id'];

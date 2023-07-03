@@ -1,10 +1,10 @@
 <div class="container">
-    <p>Modificar Paciente</p>
+    <p>Agregar Paciente</p>
     <div class="row">
         <div class="col-sm-6">
             <form>
                 <div class="mb-3">
-                    <label class="form-label">Nombre Paciente</label>
+                    <label class="form-label">Nombre</label>
                     <input [(ngModel)]="paciente.nombre_completo" type="text" class="form-control" name="nombre">
                 </div>
                 
@@ -33,16 +33,7 @@
                     <label class="form-label">Numero de Seguro Medico</label>
                     <input [(ngModel)]="paciente.numero_seguro_medico" type="text" class="form-control" name="seguro">
                 </div>
-                <div class="mb-3">
-                    <label class="form-label">Razon de la cita</label>
-                    <input [(ngModel)]="paciente.razon_cita" type="text" class="form-control" name="razon">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Sintomas</label>
-                    <input [(ngModel)]="paciente.sintomas_quejas" type="text" class="form-control" name="sintomas">
-                </div>
-
-                <button (click)="modificar()" class="btn btn-primary">Guardar</button>
+                <button (click)="agregar()" class="btn btn-primary">Agregar</button>
             </form>
         </div>
 

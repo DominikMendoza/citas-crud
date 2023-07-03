@@ -16,17 +16,6 @@ export class PacienteService {
   }
 
   createPaciente(paciente: Paciente): Observable<any> {
-    const fechaActual = new Date();
-
-    const dia = fechaActual.getDate();
-    const mes = fechaActual.getMonth() + 1;
-    const anio = fechaActual.getFullYear();
-
-    const hora = fechaActual.getHours();
-    const minutos = fechaActual.getMinutes();
-    const segundos = fechaActual.getSeconds();
-
-    paciente.fecha_registro=`${anio}-${mes}-${dia} ${hora}:${minutos}:${segundos}`;
     return this.http.post(`${this.baseUrl}`, paciente);
   }
 

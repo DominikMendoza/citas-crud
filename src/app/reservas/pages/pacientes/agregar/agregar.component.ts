@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { PacienteService } from '../../services/pacientes.service';
-import { Paciente } from '../../model/paciente.model';
+import { PacienteService } from '../../../services/pacientes.service';
+import { Paciente } from '../../../model/paciente.model';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-agregar',
@@ -17,10 +17,6 @@ export class AgregarComponent {
     telefono: '',
     correo_electronico: '',
     numero_seguro_medico: '',
-    razon_cita: '',
-    sintomas_quejas: '',
-    fecha_registro: '',
-    estado_cita: ''
   }
   constructor(private pacienteService: PacienteService, private router: Router) { }
 

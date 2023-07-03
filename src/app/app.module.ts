@@ -18,8 +18,12 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PacienteComponent } from './reservas/reservas.component';
 import { PacienteService } from './reservas/services/pacientes.service';
-import { AgregarComponent } from './reservas/pages/agregar/agregar.component';
-import { ModificarComponent } from './reservas/pages/modificar/modificar.component';
+import { AgregarComponent } from './reservas/pages/pacientes/agregar/agregar.component';
+import { ModificarComponent } from './reservas/pages/pacientes/modificar/modificar.component';
+import { ListComponent } from './reservas/pages/citas/list/list.component';
+import { CitasService } from './reservas/services/citas.service';
+import { AgregarCitaComponent } from './reservas/pages/citas/agregar/agregar.component';
+
 
 
 @NgModule({
@@ -27,7 +31,9 @@ import { ModificarComponent } from './reservas/pages/modificar/modificar.compone
     AppComponent,
     PacienteComponent,
     AgregarComponent,
-    ModificarComponent
+    ModificarComponent,
+    ListComponent,
+    AgregarCitaComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +50,7 @@ import { ModificarComponent } from './reservas/pages/modificar/modificar.compone
     MatFormFieldModule,
     FormsModule,
   ],
-  providers: [PacienteService],
+  providers: [PacienteService, CitasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
