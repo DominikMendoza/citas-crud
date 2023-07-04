@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable,Subject  } from 'rxjs';
 import { Cita } from '../model/cita.model' // define tu modelo aquí
 @Injectable({
   providedIn: 'root'

@@ -15,6 +15,7 @@
             <th scope="col">Numero de Seguro</th>
             <th scope="col">Editar</th>
             <th scope="col">Eliminar</th>
+            <th scope="col">Citas</th>
           </tr>
         </thead>
         <tbody>
@@ -33,6 +34,9 @@
             <td>
                 <button (click)="deletePaciente(paciente.id)" type="button" class="btn btn-danger">Eliminar</button>
             </td>
+            <td>
+              <button routerLink="/citas" (click)="seleccionarPaciente(paciente.id)" type="button" class="btn btn-dark">Citas</button>
+          </td>
           </tr>
         </tbody>
       </table>

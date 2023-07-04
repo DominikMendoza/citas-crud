@@ -4,28 +4,12 @@
         <div class="col-sm-6">
             <form>
                 <div class="mb-3">
-                    <label class="form-label">Razon Cita</label>
+                    <label class="form-label">Razon de la Cita</label>
                     <input [(ngModel)]="cita.razon_cita" type="text" class="form-control" name="razon_cita">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Genero</label>
+                    <label class="form-label">Sintomas</label>
                     <input [(ngModel)]="cita.sintomas_quejas" type="text" class="form-control" name="sintomas_quejas">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Fecha de Registro</label>
-                    <input [(ngModel)]="cita.fecha_registro" type="text" class="form-control" name="fecha_registro">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Estado Cita</label>
-                    <input [(ngModel)]="cita.estado_cita" type="text" class="form-control" name="estado_cita">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">ID del Paciente</label>
-                    <input [(ngModel)]="cita.paciente_id" type="text" class="form-control" name="paciente_id">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">ID del Doctor</label>
-                    <input [(ngModel)]="cita.doctor_id" type="text" class="form-control" name="doctor_id">
                 </div>
                 <button (click)="agregar()" class="btn btn-primary">Agregar</button>
             </form>            
@@ -35,10 +19,14 @@
         <div class="col-sm-6">
             <form>
                 <div class="mb-3">
-                    <label class="form-label">{{cita.razon_cita}}</label>
-                    
+                    <img src="..." class="card-img-top" alt="...">
                 </div>
-                
+                <div class="mb-3">
+                    <label class="form-label">{{cita.razon_cita}}</label>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">{{cita.sintomas_quejas}}</label>
+                </div>
             </form>
         </div>
     </div>

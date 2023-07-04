@@ -4,7 +4,7 @@ import { PacienteService } from './services/pacientes.service';
 import { Paciente } from './model/paciente.model';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-
+import { SharedService } from './services/shared.service';
 @Component({
   selector: 'app-paciente',
   templateUrl: './reservas.component.html',
@@ -17,7 +17,7 @@ export class PacienteComponent implements OnInit {
   displayedColumns: string[] = ['nombre_completo', 'fecha_nacimiento', 'genero', 'direccion', 'telefono', 
 'correo_electronico', 'numero_seguro_medico', 'razon_cita','fecha_registro', 'sintomas_quejas', 'estado_cita', 'acciones'];
 
-  constructor(private pacienteService: PacienteService, private router: Router) {
+  constructor(private pacienteService: PacienteService, private router: Router,private sharedService: SharedService) {
     this.pacienteForm = new FormGroup({});
   }
 
@@ -52,7 +52,9 @@ export class PacienteComponent implements OnInit {
     this.pacienteService.deletePaciente(id)
       .subscribe(() => this.getPacientes()); // Actualiza la lista después de borrar
   }
-
+  public seleccionarPaciente(idPaciente: string) {
+    this.sharedService.setVariable(idPaciente);
+  }
   onSubmit(): void {
     // Aquí puedes llamar a createPaciente o updatePaciente dependiendo de si estás agregando o editando
   }
