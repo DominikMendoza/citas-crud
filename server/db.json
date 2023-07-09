@@ -53,20 +53,6 @@
       "estado_cita": ""
     },
     {
-      "id": 10,
-      "nombre_completo": "Nikole",
-      "fecha_nacimiento": "23/06/23",
-      "genero": "Femenino",
-      "direccion": "lima",
-      "telefono": "6786954",
-      "correo_electronico": "arcangel080902@gmail.com",
-      "numero_seguro_medico": "124124",
-      "razon_cita": "asdasf",
-      "sintomas_quejas": "asdasd",
-      "fecha_registro": "2023-06-27T02:22:20.176Z",
-      "estado_cita": ""
-    },
-    {
       "id": 11,
       "nombre_completo": "Dominik",
       "fecha_nacimiento": "23/06/23",
@@ -137,48 +123,12 @@
       "doctor_id": "1"
     },
     {
-      "id": 8,
-      "razon_cita": "asdq",
-      "fecha_registro": "2023-7-4 0:20:55",
-      "sintomas_quejas": "qweqwe",
-      "estado_cita": "asdas",
-      "paciente_id": "3",
-      "doctor_id": "1"
-    },
-    {
       "id": 9,
       "razon_cita": "",
       "fecha_registro": "2023-7-4 0:21:13",
       "sintomas_quejas": "",
       "estado_cita": "",
       "paciente_id": "1",
-      "doctor_id": "1"
-    },
-    {
-      "id": 10,
-      "razon_cita": "ads",
-      "fecha_registro": "2023-7-4 0:49:52",
-      "sintomas_quejas": "S",
-      "estado_cita": "as",
-      "paciente_id": "3",
-      "doctor_id": "1"
-    },
-    {
-      "id": 11,
-      "razon_cita": "hola",
-      "fecha_registro": "2023-7-4 1:30:21",
-      "sintomas_quejas": "toi",
-      "estado_cita": ":v",
-      "paciente_id": 3,
-      "doctor_id": "1"
-    },
-    {
-      "id": 12,
-      "razon_cita": "asdas",
-      "fecha_registro": "2023-7-4 1:31:51",
-      "sintomas_quejas": "zcz",
-      "estado_cita": "asd",
-      "paciente_id": 3,
       "doctor_id": "1"
     },
     {
@@ -191,21 +141,81 @@
       "doctor_id": "1"
     },
     {
-      "id": 14,
-      "razon_cita": "xd",
-      "fecha_registro": "2023-7-4 1:38:31",
-      "sintomas_quejas": "a",
-      "estado_cita": "",
-      "paciente_id": 3,
-      "doctor_id": "1"
-    },
-    {
       "id": 15,
       "razon_cita": "dele",
       "fecha_registro": "2023-7-4 1:38:50",
       "sintomas_quejas": "god",
       "estado_cita": "",
       "paciente_id": 11,
+      "doctor_id": "1"
+    },
+    {
+      "id": 16,
+      "razon_cita": "cita1",
+      "fecha_registro": "2023-7-4 22:9:24",
+      "sintomas_quejas": "no hay",
+      "estado_cita": "",
+      "paciente_id": 8,
+      "doctor_id": "1"
+    },
+    {
+      "id": 20,
+      "razon_cita": "dsfsdf",
+      "fecha_registro": "2023-7-8 19:40:23",
+      "sintomas_quejas": "qweqwe",
+      "fecha_cita": "7/19/2023",
+      "inicio_cita": "04:00",
+      "fin_cita": "05:00",
+      "estado_cita": "",
+      "paciente_id": 3,
+      "doctor_id": "1"
+    },
+    {
+      "id": 21,
+      "razon_cita": "<ZX<ZX",
+      "fecha_registro": "2023-7-8 19:41:3",
+      "sintomas_quejas": ">ZC<g",
+      "fecha_cita": "7/25/2023",
+      "inicio_cita": "23:00",
+      "fin_cita": "00:00",
+      "estado_cita": "",
+      "paciente_id": 3,
+      "doctor_id": "1"
+    },
+    {
+      "id": 22,
+      "razon_cita": "hola",
+      "fecha_registro": "2023-7-8 19:45:22",
+      "sintomas_quejas": "xd",
+      "fecha_cita": "7/18/2023",
+      "inicio_cita": "18:00",
+      "fin_cita": "19:00",
+      "estado_cita": "",
+      "paciente_id": "valor inicial",
+      "doctor_id": "1"
+    },
+    {
+      "id": 23,
+      "razon_cita": "fdsf",
+      "fecha_registro": "2023-7-8 19:45:51",
+      "sintomas_quejas": "werwe",
+      "fecha_cita": "7/18/2023",
+      "inicio_cita": "04:00",
+      "fin_cita": "05:00",
+      "estado_cita": "",
+      "paciente_id": 3,
+      "doctor_id": "1"
+    },
+    {
+      "id": 24,
+      "razon_cita": "",
+      "fecha_registro": "2023-7-8 20:15:53",
+      "sintomas_quejas": "",
+      "fecha_cita": "9/20/2023",
+      "inicio_cita": "07:00",
+      "fin_cita": "08:00",
+      "estado_cita": "",
+      "paciente_id": 3,
       "doctor_id": "1"
     }
   ]

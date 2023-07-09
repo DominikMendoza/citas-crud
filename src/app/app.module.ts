@@ -7,6 +7,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { TimepickerModule } from 'ngx-bootstrap/timepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -44,6 +45,7 @@ import { AgregarCitaComponent } from './reservas/pages/citas/agregar/agregar.com
     MatInputModule,
     MatButtonModule,
     MatTableModule,
+    TimepickerModule,
     MatDatepickerModule,
     MatNativeDateModule,
     MatSelectModule,

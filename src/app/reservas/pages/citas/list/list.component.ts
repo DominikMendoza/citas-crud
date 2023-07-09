@@ -13,10 +13,6 @@ export class ListComponent implements OnInit, OnChanges {
 
   citas: Cita[] = [];
   citaForm: FormGroup;
- 
-  displayedColumns: string[] = ['nombre_completo', 'fecha_nacimiento', 'genero', 'direccion', 'telefono',
-    'correo_electronico', 'numero_seguro_medico', 'razon_cita', 'fecha_registro', 'sintomas_quejas', 'estado_cita', 'acciones'];
-
   id_paciente: string = "";
 
   constructor(private citaService: CitasService, private router: Router,private sharedService: SharedService) {
@@ -27,9 +23,10 @@ export class ListComponent implements OnInit, OnChanges {
   ngOnInit() {
     this.citaForm = new FormGroup({
       'razon_cita': new FormControl(null),
-      'fecha_registro': new FormControl(null),
       'sintomas_quejas': new FormControl(null),
-      'estado_cita': new FormControl(null)
+      'fecha_cita': new FormControl(null),
+      'inicio_cita': new FormControl(null),
+      'fin_cita': new FormControl(null)
     });
   
     this.sharedService.getVariable().subscribe(value => {
@@ -50,7 +47,10 @@ export class ListComponent implements OnInit, OnChanges {
 
   deleteCita(id: string): void {
     this.citaService.deleteCita(id)
-      .subscribe(() => this.citaService.getCitasByPacienteId(id)); // Actualiza la lista después de borrar
+      .subscribe(() => this.citaService.getCitasByPacienteId(this.id_paciente).subscribe(citas => {
+        this.citas = citas;
+        console.log(this.citas);
+      })); // Actualiza la lista después de borrar
   }
 
   onSubmit(): void {

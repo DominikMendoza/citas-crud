@@ -8,7 +8,9 @@
             <th scope="col">Id</th>
             <th scope="col">Razon de la cita</th>
             <th scope="col">Sintomas</th>
-            <th scope="col">Fecha de registro</th>
+            <th scope="col">Fecha de cita</th>
+            <th scope="col">inicio de cita</th>
+            <th scope="col">fin de cita</th>
             <th scope="col">Eliminar</th>
           </tr>
         </thead>
@@ -17,7 +19,9 @@
             <th scope="row">{{cita.id}}</th>
             <td>{{cita.razon_cita}}</td>
             <td>{{cita.sintomas_quejas}}</td>
-            <td>{{cita.fecha_registro}}</td>
+            <td>{{cita.fecha_cita}}</td>
+            <td>{{cita.inicio_cita}}</td>
+            <td>{{cita.fin_cita}}</td>
             <td>
                 <button (click)="deleteCita(cita.id)" type="button" class="btn btn-danger">Eliminar</button>
             </td>
