@@ -1,8 +1,10 @@
-import { Component, OnInit, OnChanges } from '@angular/core';
+import { Component, OnInit, OnChanges, ViewChild } from '@angular/core';
 import { CitasService } from '../../../services/citas.service';
 import { Cita } from '../../../model/cita.model';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { MatDatepicker } from '@angular/material/datepicker';
+import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 import { SharedService } from '../../../services/shared.service';
 @Component({
   selector: 'app-cita',
@@ -11,10 +13,12 @@ import { SharedService } from '../../../services/shared.service';
 })
 export class ListComponent implements OnInit, OnChanges {
 
+  @ViewChild('picker') picker!: MatDatepicker<any>;
   citas: Cita[] = [];
+  citasTotales: Cita[] = [];
   citaForm: FormGroup;
   id_paciente: string = "";
-
+  fechaFiltrada: string = "";
   constructor(private citaService: CitasService, private router: Router,private sharedService: SharedService) {
     this.citaForm = new FormGroup({});
    
@@ -35,16 +39,28 @@ export class ListComponent implements OnInit, OnChanges {
   
       this.citaService.getCitasByPacienteId(this.id_paciente).subscribe(citas => {
         this.citas = citas;
+        this.citasTotales=citas;
         console.log(this.citas);
       });
     });
   }
-  
-
+  handleDateChange(event: MatDatepickerInputEvent<Date>) {
+    if (event.value) {
+      this.fechaFiltrada=event.value.toLocaleDateString('en-US');
+      this.citas=this.citasTotales.filter(cita=>cita.fecha_cita===this.fechaFiltrada)
+    } else {
+      this.citas=this.citasTotales;
+      console.log("no hay cita con esa fechaxd");
+    }
+  }
   ngOnChanges() {
     // Aquí puedes agregar lógica adicional si es necesario
   }
-
+  resetFilter() {
+    this.citas = this.citasTotales;
+    this.fechaFiltrada="";
+    this.picker.select(null);
+  }
   deleteCita(id: string): void {
     this.citaService.deleteCita(id)
       .subscribe(() => this.citaService.getCitasByPacienteId(this.id_paciente).subscribe(citas => {

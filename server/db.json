@@ -208,12 +208,12 @@
     },
     {
       "id": 24,
-      "razon_cita": "",
-      "fecha_registro": "2023-7-8 20:15:53",
-      "sintomas_quejas": "",
-      "fecha_cita": "9/20/2023",
-      "inicio_cita": "07:00",
-      "fin_cita": "08:00",
+      "razon_cita": "hola",
+      "fecha_registro": "2023-7-9 20:48:26",
+      "sintomas_quejas": "adios",
+      "fecha_cita": "7/19/2023",
+      "inicio_cita": "02:00",
+      "fin_cita": "03:00",
       "estado_cita": "",
       "paciente_id": 3,
       "doctor_id": "1"
